@@ -1,5 +1,8 @@
+import { readfile , writefile } from "../utils/file.handler.js";
+
 export const getTasks = (req, res) => {
-    res.send("Lists all the tasks");
+    const data = readfile()
+    res.json( data )
 };
 
 export const createTasks = (req, res) => {
